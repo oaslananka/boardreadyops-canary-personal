@@ -1,0 +1,23 @@
+name: BoardReadyOps Personal Synthetic Canary
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 */6 * * *"
+
+permissions:
+  actions: read
+  checks: read
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: boardreadyops-synthetic-canary
+  cancel-in-progress: false
+
+jobs:
+  canary:
+    uses: oaslananka/boardreadyops/.github/workflows/synthetic-target-repository-canary.yml@6674db5911ed317026713ee61455b524fb25be14
+    with:
+      visibility: public
+      public-origin: ${{ vars.BOARDREADYOPS_CLOUD_ORIGIN }}

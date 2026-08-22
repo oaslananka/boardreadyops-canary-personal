@@ -1,0 +1,29 @@
+version: 1
+projects:
+  - path: hardware
+    bom: hardware/bom.csv
+    releaseMode: production
+fail-on: high
+rules:
+  manufacturing.package-completeness:
+    enabled: false
+  manufacturing.fab-notes:
+    enabled: false
+  release.changelog-present:
+    enabled: false
+  design.board-outline:
+    enabled: false
+  design.unique-references:
+    enabled: false
+  drc.kicad:
+    enabled: false
+  erc.kicad:
+    enabled: false
+waivers:
+  - rule: bom.single-source
+    owner: canary@boardreadyops.invalid
+    reason: >
+      Synthetic canary fixture: single-source supply-chain risk is intentionally
+      excluded so infrastructure failure is not confused with a policy failure.
+    expires: "2027-12-31"
+    approvedBy: synthetic-canary

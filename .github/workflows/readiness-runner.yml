@@ -163,7 +163,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           BOARDREADYOPS_PR_HEAD_SHA: ${{ inputs.head_sha }}
           BOARDREADYOPS_CLOUD_RUN_ID: ${{ inputs.run_id }}
-        uses: oaslananka/boardreadyops@ce925376bd71daf7e07f31fb1bb19a8bde30b172 # v1.24.1
+        uses: oaslananka/boardreadyops@d1c1ebed2781c8f725427c295ae420a5a22324cf # v1.34.0
         with:
           project: ${{ vars.BOARDREADYOPS_PROJECT || '' }}
           config: ${{ vars.BOARDREADYOPS_CONFIG || 'boardreadyops.yml' }}

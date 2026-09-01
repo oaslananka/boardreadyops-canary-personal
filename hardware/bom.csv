@@ -1,9 +1,8 @@
-Reference,Value,Manufacturer,MPN,RoHS,Lifecycle
-U1,MCU,STMicro,STM32F411CEU6,Compliant,Active
-U2,PMIC,Monolithic Power,MP2451,Compliant,Active
-U3,Flash,Winbond,W25Q128JVSIQ,Compliant,Active
-C1,100nF,Murata,GRM188R71H104KA93D,Compliant,Active
-C2,10uF,Samsung,CL10A106MA8NRNC,Compliant,Active
-R1,10k,Yageo,RC0603FR-0710KL,Compliant,Active
-R2,10k,Yageo,RC0603FR-0710KL,Compliant,Active
-R3,100k,Yageo,RC0603FR-07100KL,Compliant,Active
+Reference,Value,Footprint,Manufacturer,MPN,Supplier,RoHS,Lifecycle,Notes
+U1,AMS1117-3.3,SOT-223,AMS,AMS1117-3.3,"Digi-Key, Mouser, LCSC",Compliant,Active,5V to 3.3V LDO Regulator
+R1,220Ω,1206,"Yageo, Bourns","RC1206FR-07220RL","Digi-Key, Mouser",Compliant,Active,LED current limiting resistor
+R2,10kΩ,1206,"Yageo, Bourns","RC1206FR-0710KL","Digi-Key, Mouser",Compliant,Active,Reset pull-up resistor
+C1,100nF,1206,"Murata, Samsung","GRM31CR61H104KA88L","Digi-Key, Mouser",Compliant,Active,Input decoupling capacitor
+C2,10µF,1206,"Samsung, Murata","CL10A106MA8NRNC","Digi-Key, Mouser",Compliant,Active,Output bulk capacitor
+D1,LED Green,1206,"Osram, Broadcom","LY R976-PS-35","Digi-Key, Mouser",Compliant,Active,Green LED indicator (635nm)
+SW1,Tactile Switch,6mm,"C&K Components","PTS810 SJM 250 SMTR LFS","Digi-Key, Mouser",Compliant,Active,Reset/Test push button

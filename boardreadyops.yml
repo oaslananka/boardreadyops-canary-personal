@@ -27,3 +27,10 @@ waivers:
       excluded so infrastructure failure is not confused with a policy failure.
     expires: "2027-12-31"
     approvedBy: synthetic-canary
+  - rule: bom.risk-score
+    owner: canary@boardreadyops.invalid
+    reason: >
+      Synthetic canary fixture: single-source supply-chain risk is intentionally
+      excluded so infrastructure failure is not confused with a policy failure.
+    expires: "2027-12-31"
+    approvedBy: synthetic-canary

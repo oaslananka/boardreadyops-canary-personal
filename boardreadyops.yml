@@ -15,9 +15,15 @@ rules:
     enabled: false
   design.unique-references:
     enabled: false
+  design.copper-balance:
+    enabled: false
   drc.kicad:
     enabled: false
   erc.kicad:
+    enabled: false
+  bom.single-source:
+    enabled: false
+  bom.risk-score:
     enabled: false
 waivers:
   - rule: bom.single-source
@@ -25,5 +31,18 @@ waivers:
     reason: >
       Synthetic canary fixture: single-source supply-chain risk is intentionally
       excluded so infrastructure failure is not confused with a policy failure.
+    expires: "2027-12-31"
+    approvedBy: synthetic-canary
+  - rule: bom.risk-score
+    owner: canary@boardreadyops.invalid
+    reason: >
+      Synthetic canary fixture: single-source supply-chain risk is intentionally
+      excluded so infrastructure failure is not confused with a policy failure.
+    expires: "2027-12-31"
+    approvedBy: synthetic-canary
+  - rule: design.copper-balance
+    owner: canary@boardreadyops.invalid
+    reason: >
+      Low-density canary test board with solid trace routing.
     expires: "2027-12-31"
     approvedBy: synthetic-canary

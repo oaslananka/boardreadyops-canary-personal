@@ -1,0 +1,7 @@
+# KiCad temporary and autosave files
+*.kicad_prl
+*-bak
+*-bak2
+_autosave-*
+*.tmp
+.history/

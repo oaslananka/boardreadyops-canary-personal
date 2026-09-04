@@ -1,9 +1,8 @@
-Reference,Value,Manufacturer,MPN,RoHS,Lifecycle
-U1,MCU,STMicro,STM32F411CEU6,Compliant,Active
-U2,PMIC,Monolithic Power,MP2451,Compliant,Active
-U3,Flash,Winbond,W25Q128JVSIQ,Compliant,Active
-C1,100nF,Murata,GRM188R71H104KA93D,Compliant,Active
-C2,10uF,Samsung,CL10A106MA8NRNC,Compliant,Active
-R1,10k,Yageo,RC0603FR-0710KL,Compliant,Active
-R2,10k,Yageo,RC0603FR-0710KL,Compliant,Active
-R3,100k,Yageo,RC0603FR-07100KL,Compliant,Active
+Reference,Value,Footprint,Manufacturer,MPN,Supplier,RoHS,Lifecycle,Notes
+U1,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2,"AMS, Diodes Inc, Texas Instruments","AMS1117-3.3, AZ1117EH-3.3TRG1, LM1117IMPX-3.3/NOPB","Digi-Key, Mouser, LCSC",Compliant,Active,5V to 3.3V LDO Regulator
+R1,220,Resistor_SMD:R_1206_3216Metric,"Yageo, Bourns, Vishay","RC1206FR-07220RL, CR1206-FX-2200ELF, CRCW1206220RFKEA","Digi-Key, Mouser, LCSC",Compliant,Active,LED current limiting resistor
+R2,10k,Resistor_SMD:R_1206_3216Metric,"Yageo, Bourns, Vishay","RC1206FR-0710KL, CR1206-FX-1002ELF, CRCW120610K0FKEA","Digi-Key, Mouser, LCSC",Compliant,Active,Reset pull-up resistor
+C1,100nF,Capacitor_SMD:C_1206_3216Metric,"Murata, Samsung, Yageo","GRM31CR61H104KA88L, CL31B104KBCNNNC, CC1206KRX7R9BB104","Digi-Key, Mouser, LCSC",Compliant,Active,Input decoupling capacitor
+C2,10uF,Capacitor_SMD:C_1206_3216Metric,"Samsung, Murata, TDK","CL31A106KAHNNNE, GRM31CR61A106KE15L, C3216X5R1A106K160AA","Digi-Key, Mouser, LCSC",Compliant,Active,Output bulk capacitor
+D1,LED,LED_SMD:LED_1206_3216Metric,"Osram, Broadcom, Kingbright","LY R976-PS-35, HSMG-C150, APT3216SGC","Digi-Key, Mouser, LCSC",Compliant,Active,Green LED indicator (635nm)
+SW1,RST,Button_Switch_SMD:SW_SPST_PTS810,"C&K Components, Panasonic, Omron","PTS810 SJM 250 SMTR LFS, EVQ-Q2K03W, B3FS-1010P","Digi-Key, Mouser, LCSC",Compliant,Active,Reset/Test push button
